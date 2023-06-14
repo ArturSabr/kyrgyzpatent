@@ -2,7 +2,7 @@
 from django.db.models import Q
 
 
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Mark, Applicant, Patent, Code
 
 class Home(ListView):
@@ -39,6 +39,10 @@ class Home(ListView):
         return context
 
 #
+# class MarkDetailView(DetailView):
+#     model = Mark
+#     template_name = 'mark_detail.html'
+#     context_object_name = 'mark'
 # def detail(request, table1_id):
 #     # Получение записи по идентификатору
 #     table1_item = get_object_or_404(Table1, pk=table1_id)

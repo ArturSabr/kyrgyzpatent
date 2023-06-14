@@ -40,7 +40,7 @@
       <td>{{ i.registration_id }}</td>
       <td>{{ i.date_of_submission }}</td>
       <td>{{ i.num }}</td>
-      <td><img src="{{ i.img.url }}" height="50px" width="80px"> </td>
+      <td><a href="{{ i.get_pdf_url }}" target="_blank">{{ i.img }}</a></td>
       <td>{{ i.code.get.code }}  </td>
       <td>{{ i.code.get.description }}</td>
       <td>{{ i.applicant.get.title }}</td>
